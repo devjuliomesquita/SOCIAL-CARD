@@ -7,14 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
     <main class="l-main">
-      <article class="c-card" >
+      <article class="c-card c-card--index" >
         <div class="c-card__content">
-          <h2 class="c-card__title">Material Social Card</h2>
+          <h2 class="c-card__title">
+            Contemple meu 
+            <span class="c-card_title-enfase">CARTÃO SOCIAL</span>
+          </h2>
           
           <p class="c-card_text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio officiis ipsam pariatur, ex nulla qui iste totam. Asperiores recusandae rem eum sunt in doloremque accusamus. Doloremque fugit id laboriosam.
@@ -25,9 +28,12 @@
         </div>
       </article>
 
-      <article class="c-card" >
+      <article class="c-card c-card--linkdin" >
         <div class="c-card__content">
-          <h2 class="c-card__title">LinkdIn</h2>
+          <h2 class="c-card__title">
+            Contemple meu 
+            <span class="c-card_title-enfase">LinkdIn</span>
+          </h2>
           
           <p class="c-card_text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio officiis ipsam pariatur, ex nulla qui iste totam. Asperiores recusandae rem eum sunt in doloremque accusamus. Doloremque fugit id laboriosam.
@@ -38,9 +44,12 @@
         </div>
       </article>
 
-      <article class="c-card" >
+      <article class="c-card c-card--github" >
         <div class="c-card__content">
-          <h2 class="c-card__title">GitHub</h2>
+          <h2 class="c-card__title">
+            Contemple meu 
+            <span class="c-card_title-enfase">GitHub</span>
+          </h2>
           
           <p class="c-card_text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio officiis ipsam pariatur, ex nulla qui iste totam. Asperiores recusandae rem eum sunt in doloremque accusamus. Doloremque fugit id laboriosam.
@@ -51,9 +60,12 @@
         </div>
       </article>
 
-      <article class="c-card" >
+      <article class="c-card c-card--instagram" >
         <div class="c-card__content">
-          <h2 class="c-card__title">Instagram</h2>
+          <h2 class="c-card__title">
+            Contemple meu 
+            <span class="c-card_title-enfase">Instagram</span>
+          </h2>
           
           <p class="c-card_text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio officiis ipsam pariatur, ex nulla qui iste totam. Asperiores recusandae rem eum sunt in doloremque accusamus. Doloremque fugit id laboriosam.
@@ -65,57 +77,36 @@
       </article>
 
       <ul class="c-menu">
-        <li class="c-menu__item">
-          <button class="c-menu_trocar">
-            <svg
-              xmlns = " http://www.w3.org/2000/svg "
-              viewBox = " 0 0 512 512 "
-            >
-              <path
-                d = " M503.402 228.885L273.684 19.567c-10.083-9.189-25.288-9.188-35.367-.001L8.598 228.886c-8.077 7,36-10,745 18,7-6,799 28,889 3,947 10,189 13.55720772 24,484 16.772h36. 6.742 15.057 15.057 15.057h125.914c8.315 0 15.057-6.741 15.057-15.057V356.932h74.002v127.337c0 8,315 6.742 15.057 15.057 15.057h125.908c8.315 0 15.057-6.741 15.057-15.057V356.932h74.002v127.337c0 8,315 6.742 15.057 15.057 15.057h125.908c8.315 0 15.057-6.741 15.057-15.057V356.932h74.002v127.337c0 8,315 6.742 15.057 15.057 15.057h125.908c8.315 0 15.057-6.741 15.057-15.057.926.536.537c 026.536.537. 6.584 24.484-16.772 3.941-10.19 1.273-21.529-6.804-28.89zM445.092 42.73H343.973l116.176 105.636v-90.58c0-8.315-6.741-15.056-15.057-15.056z "
-              />
-            </svg >
-          </button>
-        </li>
+        <a href="#" class="c-menu--home">
+          <li class="c-menu__item c-menu__item--index">
+            <button class="c-menu__trocar">
+              
+            </button>
+          </li>
+        </a>
+        <a href="#" class="c-menu--linkedin">
+          <li class="c-menu__item">
+            <button class="c-menu__trocar">
+              
+            </button>
+          </li>
+        </a>
+        <a href="#" class="c-menu--github">
+          <li class="c-menu__item">
+            <button class="c-menu__trocar">
+              
+            </button>
+          </li>
+        </a>
+        <a href="#" class="c-menu--instagram">
+          <li class="c-menu__item">
+            <button class="c-menu__trocar">
+              
+            </button>
+          </li>
+        </a>
 
-        <li class="c-menu__item">
-          <button class="c-menu_trocar">
-            <svg
-              xmlns = " http://www.w3.org/2000/svg "
-              viewBox = " 0 0 512 512 "
-            >
-              <path
-              d = " M352 0H160C71.648 0 0 71.648 0 160v192c0 88.352 71.648 160 160 160h192c88.352 0 160-71.648 160-160V160C512 71.648 440.352 0 352 0zm112 352c0 61.76-50.24 112-112H160-112c-61.1276 112.124-1.128-1124-1124-1124-1122-160C512 71.648 440.352 0 352 0zm112 352c0 61.76-50.24.112. 98,24 98,24 48 160 48h192c61,76 0 112 50,24 112 112v192z "
-              />
-            </svg >
-          </button>
-        </li>
-
-        <li class="c-menu__item">
-          <button class="c-menu_trocar">
-            <svg
-              xmlns = " http://www.w3.org/2000/svg "
-              viewBox = " 0 0 512 512 "
-            >
-              <path
-                d = " M503.402 228.885L273.684 19.567c-10.083-9.189-25.288-9.188-35.367-.001L8.598 228.886c-8.077 7,36-10,745 18,7-6,799 28,889 3,947 10,189 13.55720772 24,484 16.772h36. 6.742 15.057 15.057 15.057h125.914c8.315 0 15.057-6.741 15.057-15.057V356.932h74.002v127.337c0 8,315 6.742 15.057 15.057 15.057h125.908c8.315 0 15.057-6.741 15.057-15.057V356.932h74.002v127.337c0 8,315 6.742 15.057 15.057 15.057h125.908c8.315 0 15.057-6.741 15.057-15.057V356.932h74.002v127.337c0 8,315 6.742 15.057 15.057 15.057h125.908c8.315 0 15.057-6.741 15.057-15.057.926.536.537c 026.536.537. 6.584 24.484-16.772 3.941-10.19 1.273-21.529-6.804-28.89zM445.092 42.73H343.973l116.176 105.636v-90.58c0-8.315-6.741-15.056-15.057-15.056z "
-              />
-            </svg >
-          </button>
-        </li>
-
-        <li class="c-menu__item">
-          <button class="c-menu_trocar">
-            <svg
-              xmlns = " http://www.w3.org/2000/svg "
-              viewBox = " 0 0 512 512 "
-            >
-              <path
-              d = " M352 0H160C71.648 0 0 71.648 0 160v192c0 88.352 71.648 160 160 160h192c88.352 0 160-71.648 160-160V160C512 71.648 440.352 0 352 0zm112 352c0 61.76-50.24 112-112H160-112c-61.1276 112.124-1.128-1124-1124-1124-1122-160C512 71.648 440.352 0 352 0zm112 352c0 61.76-50.24.112. 98,24 98,24 48 160 48h192c61,76 0 112 50,24 112 112v192z "
-              />
-            </svg >
-          </button>
-        </li>
+        
       </ul>
     </main>
 

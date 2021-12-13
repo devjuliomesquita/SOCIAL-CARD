@@ -1,0 +1,162 @@
+*{
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;    
+}
+body{
+    background-color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+}
+/* ESTRUTURA BASICA DO CARD */
+.l-main{
+    background-color:white;
+    border-radius: 15px;
+    /*box-shadow: ;*/
+    height: 265px;
+    width: 500px;
+    margin:auto;
+    padding:60px;
+    position: relative;
+    display: flex;
+}
+.c-button{
+    background-color: #3da6c8;
+    border-radius: 30px;
+    color:#fcfcfc;
+    display: inline-block;
+    max-width: 200px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 90ms ease-in;
+}
+.c-button:hover{
+    background-color: aqua;
+    transition: all 90ms ease-out;
+}
+.c-button:active{
+    transform: translateY(1.5px);
+}
+/* ESTILIZANDO O CARD */
+.c-card{
+    border-radius: 15px;
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+/*ESTILIZANDO CADA CARD */
+.c-card--index{
+background-color: brown;
+}
+.c-card--linkdin{
+    background-color: #0077b5;
+}
+.c-card--linkdin .c-button{
+    background-color: #fcfcfc;
+    color: #4f4f4f;
+}
+.c-card--linkdin .c-button:hover{
+    background-color: #cecaca;
+}
+.c-card--github{
+    background-color: #333;
+}
+.c-card--github .c-button{
+    background-color: #fcfcfc;
+    color: #4f4f4f;
+}
+.c-card--github .c-button:hover{
+    background-color: #cecaca;
+}
+.c-card--instagram{
+    background-color: #e4405f;
+}
+.c-card--instagram .c-button{
+    background-color: #4f5bd5;
+}
+.c-card--instagram .c-button:hover{
+    background-color: #7178ca;
+}
+/* ESTILIZANDO O TEXTO */
+.c-card__title{
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+.c-card_title-enfase{
+    display: inline-block;
+    flex:1;
+    font-size: 210%;
+    font-weight: bold;
+    width: 100%;
+}
+.c-card_text{
+    line-height: 1.6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* ESTILIZANDO O MENU */
+.c-menu{
+    align-items:flex-end;
+    bottom: 0;
+    display:flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: -120px;
+}
+.c-menu__item{
+    margin-left: 10px;
+   
+    
+    z-index: 1;
+}
+.c-menu__item--index{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+} 
+.c-menu__trocar{
+    background: transparent;
+    border:0;
+    bottom: 30px;
+    cursor: pointer;
+    right: 30px;
+    padding: 0;
+    height: 30px;
+    width: 50px;   
+}
+.c-menu__trocar:active{
+    
+}
+/* ESTILIZAÇÃO DOS PONTOS DA LISTA */
+.c-menu--home{
+    list-style-image: url('./IMG/home.png');
+    
+}
+.c-menu--linkedin{
+    list-style-image: url('./IMG/linkedin.png');
+}
+.c-menu--github{
+    list-style-image: url('./IMG/github-sign.png');
+}
+.c-menu--instagram{
+    list-style-image: url('./IMG/instagram.png');
+}
